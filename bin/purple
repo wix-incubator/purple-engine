@@ -1,0 +1,13 @@
+#!/bin/bash
+
+base_dir="$(cd `dirname $0`; pwd)"/..
+
+cd "$base_dir"/../..
+
+xcode_libs_link=node_modules/purple-engine/xcode_libs_link
+rm $xcode_libs_link
+ln -s ../../node_modules $xcode_libs_link
+
+react-native start --root "$base_dir" &
+react-native run-ios --no-packager --project-path "$base_dir"/ios/
+wait

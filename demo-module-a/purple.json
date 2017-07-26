@@ -1,0 +1,6 @@
+{
+  "bundleId": "com.wix.purple-engine.demo-module",
+  "modules": [
+    "demo-module"
+  ]
+}
