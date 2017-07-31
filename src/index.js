@@ -7,8 +7,7 @@ import RN, {
 } from 'react-native';
 import _ from 'lodash';
 
-import demoModuleA from 'demo-module-a';
-import demoModuleB from 'demo-module-b';
+import modules from './modules';
 
 class PurpleEngine {
   constructor(modules) {
@@ -36,10 +35,7 @@ class PurpleEngine {
   }
 }
 
-const purpleEngine = new PurpleEngine([
-  demoModuleA,
-  demoModuleB
-]);
+const purpleEngine = new PurpleEngine(modules);
 
 export default class PurpleApp extends Component {
   render() {
