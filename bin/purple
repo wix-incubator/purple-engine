@@ -14,7 +14,7 @@ if(config.purpleDevProjectStructure !== true) {
   process.chdir(`${__dirname}/../../..`);
 
   const xcode_libs_link = 'node_modules/purple-engine/xcode_libs_link'
-  child_process.execSync(`rm ${xcode_libs_link}`);
+  child_process.execSync(`rm -f ${xcode_libs_link}`);
   child_process.execSync(`ln -s ../../node_modules ${xcode_libs_link}`);
 } else {
   process.chdir(`${__dirname}/..`);
