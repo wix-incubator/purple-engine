@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "../bin/purple",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "../src/purple-engine/bin/purple"
   },
   "author": "",
   "license": "ISC",
@@ -13,11 +12,6 @@
     "modules": [
       "demo-module-a",
       "demo-module-b"
-    ],
-    "roots": [
-      "demo-module-a",
-      "demo-module-b"
-    ],
-    "purpleDevProjectStructure": true
+    ]
   }
 }

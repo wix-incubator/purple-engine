@@ -7,7 +7,7 @@ import RN, {
 } from 'react-native';
 import _ from 'lodash';
 
-import modules from './modules';
+import modules from '../../../modules';
 
 class PurpleEngine {
   constructor(modules) {
